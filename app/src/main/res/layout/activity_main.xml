@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnImgVehiculo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/txtmarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            android:hint="Marca" />
+
+        <EditText
+            android:id="@+id/txtmodelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Modelo"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/txtaño"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Año"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/txtNdeMotor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Número de Motor"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/txtNdeChasis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Número de Chasis"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnGuardarAgendaVehiculos"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/car"
+            android:text="REGISTRAR VEHICULOS" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabListarVehiculos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="1dp"
+        android:src="@android:drawable/ic_menu_revert" />
+
+</LinearLayout>
